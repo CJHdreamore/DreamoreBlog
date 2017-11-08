@@ -3,7 +3,7 @@ encoding: utf-8
 title: Dreamore # 你的博客名字，可以定义修订
 header-img: "img/green.jpg"
 tagline: "cn"  
-description: "耗子和香香的Dreamore"  # 一句话描述你的博客
+description: "在这里，开始你们的伟大冒险。"  # 一句话描述你的博客
 baseurl: ""
 url: "http://HaoXiangDreamore"  # 此处填写你的博客地址 
 
@@ -45,7 +45,7 @@ defaults:
     values:
       layout: "post"
       author: "陈小耗" # 你的名字
-      header-img: "img/green.jpg" # We don't want posts without a header image, that whould mean white on white
+      header-img: "img/theme.jpg" # We don't want posts without a header image, that whould mean white on white
 
 # Comments 
 comments :
