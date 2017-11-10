@@ -2,9 +2,7 @@
 layout: home-page
 description: <p>Which hurts you more? The pain of hard working or the pain of regret?</p>
 ---
-
-<ol class="post-card-box clearfix">
-  {% for post in paginator.posts %}
+{% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">            
@@ -40,4 +38,4 @@ description: <p>Which hurts you more? The pain of hard working or the pain of re
     {% endif %}
 </ul>
 {% endif %}
-</ol>
+
