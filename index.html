@@ -1,7 +1,8 @@
 ---
-layout: home-page
+layout: page
 description: <p>Which hurts you more? The pain of hard working or the pain of regret?</p>
 ---
+
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
