@@ -1,6 +1,6 @@
 encoding: utf-8
 # Site settings
-title: Dreamore # 你的博客名字，可以定义修订
+title: Dreamore-不老歌 # 你的博客名字，可以定义修订
 header-img: "img/sunflower.jpg"
 tagline: "cn"  
 description: "在这里，开始你们的伟大冒险。"  # 一句话描述你的博客
@@ -10,7 +10,7 @@ url: "http://HaoXiangDreamore"  # 此处填写你的博客地址
 # About/contact
 owner: 
   name: "ChenXiaohao" # 填写作者信息：名字
-  email: chenjiehaojane@foxmail.com # 填写作者信息：邮箱
+  email: # 填写作者信息：邮箱
   bio: "你的博客描述" # 填写作者信息：博客描述
 
 # Data
@@ -61,4 +61,16 @@ google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
 
-# Links to include in footer navigation
+# Paginate
+paginate: 6
+paginate_path: /page:num/
+
+# Build settings
+markdown: kramdown
+gems:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-sitemap
+
+include: [_pages]
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
