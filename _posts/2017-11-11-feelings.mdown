@@ -1,0 +1,14 @@
+---
+layout: post
+title: 凝滞
+date: 2017-11-11
+categories: blog
+tags: [生活,念念]
+description: 生活&故事&碎碎念。
+---
+
+看不懂用来构建网站的jekyll官方文档
+
+不过，也许是自己没有静下心来看。
+
+ε＝ε＝ε＝(#>д<)
