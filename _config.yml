@@ -1,7 +1,7 @@
 encoding: utf-8
 # Site settings
 title: Dreamore-不老歌 # 你的博客名字，可以定义修订
-header-img: "img/sunflower.jpg"
+header-img: "img/header.jpg"
 tagline: "cn"  
 description: "在这里，开始你们的伟大冒险。"  # 一句话描述你的博客
 baseurl: ""
@@ -45,7 +45,7 @@ defaults:
     values:
       layout: "post"
       author: "陈小耗" # 你的名字
-      header-img: "img/theme.jpg" # We don't want posts without a header image, that whould mean white on white
+      header-img: "img/favicon.png" # We don't want posts without a header image, that whould mean white on white
 
 # Comments 
 comments :
