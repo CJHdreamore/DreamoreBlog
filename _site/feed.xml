@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dreamore-不老歌</title>
+    <description>在这里，开始你们的伟大冒险。</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 12 Nov 2017 21:12:00 +0800</pubDate>
+    <lastBuildDate>Sun, 12 Nov 2017 21:12:00 +0800</lastBuildDate>
+    <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>凝滞</title>
+        <description>看不懂用来构建网站的jekyll官方文档
+
+不过，也许是自己没有静下心来看。
+
+ε＝ε＝ε＝(#&gt;д&lt;)</description>
+        <pubDate>Sat, 11 Nov 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/blog,/life/2017/11/11/feelings/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog,/life/2017/11/11/feelings/</guid>
+        
+        <category>生活</category>
+        
+        <category>念念</category>
+        
+        
+        <category>blog,</category>
+        
+        <category>life</category>
+        
+      </item>
+    
+      <item>
+        <title>匆匆</title>
+        <description>又匆匆走过一天。
+
+想要好好建造这个“不老歌”，虽然它现在还一片空白。</description>
+        <pubDate>Fri, 10 Nov 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/blog/2017/11/10/feelings/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2017/11/10/feelings/</guid>
+        
+        <category>生活</category>
+        
+        <category>念念</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>冬天快乐</title>
+        <description>这些年，我爱过“程朗”，遇见过“章远”，错过过“大土”。
+做过“夏小橘”，也有幸体验过“何洛”。
+
+然而我究竟谁都不是，只是芸芸众生中切切期盼不断失望又不断满怀希望的陈小耗。
+
+</description>
+        <pubDate>Thu, 09 Nov 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/blog/2017/11/09/feelings/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2017/11/09/feelings/</guid>
+        
+        <category>生活</category>
+        
+        <category>念念</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>雪中小樽</title>
+        <description>刚看了喜欢的摄影师燕子拍的旅行日记，小樽的雪花飞舞让我竟然有流泪的冲动。
+我想不是因为自己太感性，而是因为，美好的东西总是容易让人感动啊。</description>
+        <pubDate>Wed, 08 Nov 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/blog/2017/11/08/feelings/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2017/11/08/feelings/</guid>
+        
+        <category>生活</category>
+        
+        <category>故事</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+  </channel>
+</rss>

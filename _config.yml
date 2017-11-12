@@ -14,8 +14,8 @@ owner:
   bio: "你的博客描述" # 填写作者信息：博客描述
 
 # Data
-gavatar: img/favicon.png # 浏览器地址栏小图标，可自定义更改
-favicon: img/favicon.png # 浏览器地址栏小图标，可自定义更改
+gavatar: img/favicon.ico # 浏览器地址栏小图标，可自定义更改
+favicon: img/favicon.ico # 浏览器地址栏小图标，可自定义更改
 
 
 # Build settings  
@@ -39,7 +39,7 @@ defaults:
     values:
       layout: "post"
       author: "陈小耗" # 你的名字
-      header-img: "img/green.png" # We don't want posts without a header image, that whould mean white on white
+      header-img: "img/green.jpg" # We don't want posts without a header image, that whould mean white on white
 
 # Comments 
 comments :

@@ -2,8 +2,8 @@
 layout: post
 title: 凝滞
 date: 2017-11-11
-categories: blog
-tags: [生活,念念]
+categories: blog, life
+tags: [生活, 念念]
 description: 生活&故事&碎碎念。
 ---
 
