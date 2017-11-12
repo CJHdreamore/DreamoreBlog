@@ -1,66 +1,37 @@
-encoding: utf-8
-# Site settings
-title: Dreamore-不老歌 # 你的博客名字，可以定义修订
-header-img: "img/bantou.jpg"
-tagline: "cn"  
-description: "在这里，开始你们的伟大冒险。"  # 一句话描述你的博客
-baseurl: ""
-url: "http://HaoXiangDreamore"  # 此处填写你的博客地址 
+title: Hello, world! I'm David Freeman
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+permalink: ':title/'
+baseurl: "/flexible-jekyll" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+site-twitter: "" #if your site has a twitter account, enter it here
 
-# About/contact
-owner: 
-  name: "ChenXiaohao" # 填写作者信息：名字
-  email: # 填写作者信息：邮箱
-  bio: "你的博客描述" # 填写作者信息：博客描述
+# Author Settings
+author: David Freeman # add your name
+author-img: david-freeman.jpg # add your photo
+about-author: I am a web developer focusing on front-end development. Always hungry to keep learning. # add description
+twitter: # add your Twitter handle
+facebook: # add your Facebook handle
+github: artemsheludko # add your Github handle
+linkedin: # add your Linkedin handle
+email: # add your Email address
 
-# Data
-gavatar: img/favicon.ico # 浏览器地址栏小图标，可自定义更改
-favicon: img/favicon.ico # 浏览器地址栏小图标，可自定义更改
+# Disqus
+discus-identifier: mr-brown # add your discus identifier
 
+# Tracker
+analytics: # Google Analytics
 
-# Build settings  
-# use Github Flavored Markdown !important  
-# document: http://jekyllrb.com/docs/configuration/#kramdown  
+# Build Settings
 markdown: kramdown
-highlighter: rouge
-permalink: pretty
-paginate: 8
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone: Asia/Shanghai
-
-# Defaults for posts
-defaults:
-  -
-    scope: 
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      author: "陈小耗" # 你的名字
-      header-img: "img/green.jpg" # We don't want posts without a header image, that whould mean white on white
-
-# Comments 
-comments :
-  provider : disqus # 使用 disqus 评论模块，读者翻墙才能看见
-  duoshuo :
-    short_name :  # 填写你的 disqus id
-  disqus :
-      short_name :  # 填写你的 disqus id
-
-# Analytics and webmaster tools stuff goes here
-google_analytics:  # 填写你  google_analytics id
-google_verify:
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:
-
-
-# Build settings
-plugins:
-  - jekyll-paginate
-  - jekyll-feed
+plugins_dir:
   - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
 
+paginate: 8
+paginate_path: "/page/:num"
 
-theme: jekyll-theme-architect
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
