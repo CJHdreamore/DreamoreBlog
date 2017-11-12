@@ -17,12 +17,6 @@ owner:
 gavatar: img/favicon.png # 浏览器地址栏小图标，可自定义更改
 favicon: img/favicon.png # 浏览器地址栏小图标，可自定义更改
 
-douban_username:  # 你的豆瓣id
-twitter_username: 
-github_username: 
-facebook_username: 
-weibo_username: 
-zhihu_username: 
 
 # Build settings  
 # use Github Flavored Markdown !important  
@@ -45,7 +39,7 @@ defaults:
     values:
       layout: "post"
       author: "陈小耗" # 你的名字
-      header-img: "img/if.png" # We don't want posts without a header image, that whould mean white on white
+      header-img: "img/green.png" # We don't want posts without a header image, that whould mean white on white
 
 # Comments 
 comments :
@@ -61,18 +55,12 @@ google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
 
-# Paginate
-paginate: 6
-paginate_path: /page:num/
 
 # Build settings
-markdown: kramdown
 plugins:
   - jekyll-paginate
   - jekyll-feed
   - jekyll-sitemap
 
 
-include: [_pages]
-exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
 theme: jekyll-theme-architect
