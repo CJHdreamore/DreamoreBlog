@@ -2,10 +2,10 @@ encoding: utf-8
 title: Dreamore-不老歌
 description: > # this means to ignore newlines until "baseurl:"
  在这里，开始你们的伟大冒险
-permalink: ':title/'
-baseurl: "/flexible-jekyll" # the subpath of your site, e.g. /blog
-url: "http://HaoXiangDreamore" # the base hostname & protocol for your site, e.g. http://example.com
-site-twitter: "" #if your site has a twitter account, enter it here
+permalink: pretty
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://HaoXiangDreamore.com" # the base hostname & protocol for your site, e.g. http://example.com
+
 
 # Author Settings
 author: ChenXiaohao # add your name
