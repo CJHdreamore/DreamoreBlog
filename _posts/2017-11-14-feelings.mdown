@@ -1,11 +1,15 @@
 ---
 layout: post
+
 title: 关于热爱这件事
+
 date: 2017-11-14
 categories: blog, life
 tags: [疯人呓语]
-description: 生活&故事&碎碎念。
+
 ---
+![life is beautiful](https://wx3.sinaimg.cn/mw1024/5b179c71ly1fkue6rmkwzj22c01k0h3k.jpg)
+
 热爱这个词似乎天然地带着一种勇敢和炽烈的情感。
 
 爱已经很重了，更何况是热爱呢？想来热爱应该是在爱的顶峰了吧。
@@ -28,4 +32,4 @@ description: 生活&故事&碎碎念。
 
 我会逐渐明白吗？这未知的人生会许我逐渐懂得的机会吗？
 
-我不敢奢求，但是我也绝不放弃。
+**我不敢奢求，但是我也绝不放弃。**
