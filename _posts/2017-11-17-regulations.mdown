@@ -8,7 +8,7 @@ categories: blog, life
 tags: [不破不立]
 
 ---
-![小熊饼](http://ozkd3m0q7.bkt.clouddn.com/%E5%B0%8F%E7%86%8A%E9%A5%BC%E7%9A%84%E4%B8%80%E5%AE%B6.jpg)
+![小熊饼](post_image/xiong.jpg)
 
 
 今早我吃了：一盒蛋糕卷、两块紫薯饼、一块榴莲酥、一块花生酥、一块糕点、一个鸡蛋。
