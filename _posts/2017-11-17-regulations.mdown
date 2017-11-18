@@ -2,13 +2,12 @@
 layout: post
 
 title: 及时止损之条例
-
+img: xiong.jpg 
 date: 2017-11-17
 categories: blog, life
 tags: [不破不立]
-
+author: 陈小耗
 ---
-![小熊饼](post_image/xiong.jpg)
 
 
 今早我吃了：一盒蛋糕卷、两块紫薯饼、一块榴莲酥、一块花生酥、一块糕点、一个鸡蛋。
