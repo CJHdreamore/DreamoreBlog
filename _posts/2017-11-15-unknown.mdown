@@ -2,13 +2,13 @@
 layout: post
 
 title: 前路茫茫
-
+img: girl_and_dog.jpg
 date: 2017-11-15
 categories: blog, life
 tags: [疯人呓语]
 
 ---
-![unknown](https://wx3.sinaimg.cn/mw690/5b179c71ly1fjia9dn9m6j22c01k0e81.jpg)
+
 
 我每天都会在内心问自己无数遍：你要去哪里？
 

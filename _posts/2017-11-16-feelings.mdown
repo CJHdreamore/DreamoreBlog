@@ -2,13 +2,13 @@
 layout: post
 
 title: 勇敢的人啊去创造生活吧！
-
+img: subing.jpg
 date: 2017-11-16
 categories: blog, life
 tags: [疯人呓语]
 
 ---
-![喵](https://wx2.sinaimg.cn/mw690/005vaCFkgy1fji0nyjgmej31kw11x0y3.jpg)
+
 
 今天的科研效率不高不低，因为自己并没有做什么实际的事，但是也并没有浪费时间。
 

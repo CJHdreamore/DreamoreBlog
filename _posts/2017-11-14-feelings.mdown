@@ -2,13 +2,13 @@
 layout: post
 
 title: 关于热爱这件事
-
+img: peaceful.jpg
 date: 2017-11-14
 categories: blog, life
 tags: [疯人呓语]
 
 ---
-![life is beautiful](https://wx3.sinaimg.cn/mw1024/5b179c71ly1fkue6rmkwzj22c01k0h3k.jpg)
+
 
 热爱这个词似乎天然地带着一种勇敢和炽烈的情感。
 

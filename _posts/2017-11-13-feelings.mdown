@@ -4,6 +4,7 @@ title: 别急
 date: 2017-11-13
 categories: blog, life
 tags: [一句话给今天的自己]
+img: love_yourself.jpg
 description: 生活&故事&碎碎念。
 ---
 
