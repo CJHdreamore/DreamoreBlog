@@ -1,36 +1,43 @@
 encoding: utf-8
 title: Dreamore-不老歌
+email: 
 description: > # this means to ignore newlines until "baseurl:"
  在这里，开始你们的伟大冒险
-permalink: pretty
+permalink: ':title/'
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://HaoXiangDreamore.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://HaoXiangDreamore.com"  # the base hostname & protocol for your site, e.g. http://example.com
 
-
-# Author Settings
+# Author settings
 author: 陈小耗 # add your name
-author-img: haozi.jpg # add your photo
-about-author: 这里有一只努力想要变勇敢变强大的耗子^_^
-twitter: # add your Twitter handle
-facebook: # add your Facebook handle
-github: CJHdreamore
-linkedin: # add your Linkedin handle
-email: # add your Email address
+author-pic: haozi.jpg
+about-author: 这里有一只努力想要变勇敢变真实的耗子^_^
+
+# Contact links
+email: # Add your Email address
+website: # Add your website, do not add http://
+linkedin: # Add your Linkedin handle
+github: CJHdreamore # Add your Github handle
+twitter:  # Add your Twitter handle
+facebook: # Add your Facebook handle
+instagram: # Add your Instagram handle
+
+
+
 
 # Disqus
-discus-identifier: mr-brown # add your discus identifier
+discus_identifier: # Add your discus identifier
 
-# Tracker
-analytics: # Google Analytics
 
-# Build Settings
+# Paginate
+paginate: 6
+paginate_path: /page:num/
+
+# Build settings
 markdown: kramdown
-plugins_dir:
-  - jekyll-sitemap
+gems:
   - jekyll-paginate
-  - jemoji
+  - jekyll-feed
+  - jekyll-sitemap
 
-paginate: 8
-paginate_path: "/page/:num"
-
+include: [_pages]
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
