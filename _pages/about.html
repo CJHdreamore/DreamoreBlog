@@ -1,6 +1,6 @@
 ---
 layout: home-page
-title: 关于耗子
+title: About me
 permalink: /about/
 ---
 <div class="small-wrapper">
@@ -13,24 +13,6 @@ permalink: /about/
     </section>
     <section class="about-body">
       <ul class="contact-list">
-      {% if site.email %}
-        <li class="email"><a href="mailto:{{site.email}}"><i class="fa fa-envelope-o"></i></a></li>
-      {% else %}
-        <li class="email"><a href="mailto:example.adam@blog.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-      {% endif %}
-
-      {% if site.phone %}
-        <li class="phone"><a href="tel:{{site.phone}}"><i class="fa fa-phone"></i></a></li>
-      {% else %}
-        <li class="phone"><a href="tel:044 825 5523"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
-      {% endif %}
-
-      {% if site.website %}
-        <li class="website"><a href="http://{{site.website}}" target="_blank"><i class="fa fa-globe"></i></a></li>
-      {% else %}
-        <li class="website"><a href="https://artemsheludko.github.io" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
-      {% endif %}
-
       {% if site.linkedin %}
         <li class="linkedin"><a href="https://in.linkedin.com/in/{{site.linkedin}}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
       {% else %}
@@ -59,12 +41,6 @@ permalink: /about/
         <li class="instagram"><a href="https://instagram.com/{{site.instagram}}" target="_blank"><i class="fa fa-instagram"></i></a></li>
       {% else %}
         <li class="instagram"><a href="https://instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-      {% endif %}
-
-      {% if site.pinterest %}
-        <li class="pinterest"><a href="https://pinterest.com/{{site.pinterest}}" target="_blank"><i class="fa fa-pinterest"></i></a></li>
-      {% else %}
-        <li class="pinterest"><a href="https://pinterest.com/" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
       {% endif %}
       </ul>
     </section> <!-- End About Body-->
