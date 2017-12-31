@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 数据分析师问答汇总
-img: data_analysis
+img: data_analysis.jpg
 date: 2017-12-31
 categories: work
 tags: [Q&A]
