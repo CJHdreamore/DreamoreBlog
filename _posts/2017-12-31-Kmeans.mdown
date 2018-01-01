@@ -111,9 +111,7 @@ K-means能否将代表不同数字的样本成功聚为10类呢？
 
 在sklearn中也有专门探讨"clustering performance evaluation"
 
-关于聚类性能度量，详见我的另一篇总结
-[聚类的性能度量]
-(http://haoxiangdreamore.com/Cluster_performance/)
+关于聚类性能度量，详见我的另一篇总结[聚类性能度量](http://haoxiangdreamore.com/Cluster_performance/)
 
 
 
