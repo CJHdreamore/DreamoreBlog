@@ -55,6 +55,7 @@ Kmeans依赖于对cluster number的预判，并且它对于**anisotropicaly** di
     plt.scatter(X[:,0],X[:,1],c=pred)
 
  将Kmeans模型预测得到的label直接用于c这个代表颜色的变量中。非常简洁优雅的一种呈现方式。
+
 2.在生成不同大小的簇数据集时，有一种神奇的filter方式。
 
 利用make_blobs函数返回的两个变量：第一个是一个二维的numpy数组，代表数据集；第二个则是每个样本对应的label。
@@ -111,7 +112,7 @@ K-means能否将代表不同数字的样本成功聚为10类呢？
 在sklearn中也有专门探讨"clustering performance evaluation"
 
 关于聚类性能度量，详见我的另一篇总结
-[聚类的性能度量]（http://haoxiangdreamore.com/Cluster_performance/）
+[聚类的性能度量]（http://haoxiangdreamore.com/Cluster_performance/"Title"）
 
 
 
