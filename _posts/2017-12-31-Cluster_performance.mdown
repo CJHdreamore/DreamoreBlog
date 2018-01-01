@@ -23,6 +23,7 @@ author: 陈小耗
  这种度量方式要求已知真实的标记labels_true，还有通过聚类得到的标记labels_pred。ARI做的就是度量真实标记和预测标记之间的相似度(similarity).
 
 - 优势:
+
        1.对一个随机分布（均匀分布）的标记集，它的ARI分数将接近于0。不管样本数和簇的数为多少。这条特性，让ARI可以成为consensus index（一致性指标）
 
        2.ARI是有界的[-1,1]，越负代表聚类结果越不好。
@@ -130,6 +131,7 @@ sklearn有专门的一篇文章来写"如何利用SC值来选择最优的聚类�
 这是通过：within-cluster dispersion matrix和 between group dispersion matrix来度量的。
 
 - 优势：
+
        1.分数的高低直接和簇的定义挂钩。簇的定义不就是簇内越凝聚，不同簇间越分开吗。
 
        2.这个指标的计算很快。（这一点如何体现的...）
