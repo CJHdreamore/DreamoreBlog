@@ -8,8 +8,9 @@ tags: [sklearn]
 categories: learning
 ---
 
-#Mini Batch K-means
-##原理
+# Mini Batch K-means
+
+## 原理
 
 Mini Batch 是Kmeans的一种衍生，目的是为了节省Kmeans中的计算时间。（样本距离）
 
@@ -23,7 +24,7 @@ Mini Batch 是Kmeans的一种衍生，目的是为了节省Kmeans中的计算时
 
 使用Mini batch能够极大地减小算法收敛到一个最优值的时间，同时这个最优值（最小的inertia)只比标准的算法差那么一点。
 
-##算法
+## 算法
 
 - step1: 随机地从数据集上采样出b个样本，构造为一个mini-batch.将每一个样本分配给其最近的质心。
 
@@ -32,7 +33,7 @@ Mini Batch 是Kmeans的一种衍生，目的是为了节省Kmeans中的计算时
 
 因此，Mini-batch Kmeans的收敛更快。
 
-##Demo - 比较Kmeans和MiniBatchKmeans两种聚类算法
+## Demo - 比较Kmeans和MiniBatchKmeans两种聚类算法
 
 - 调用MiniBatchKmeans时，参数max_no_improvement是什么意思？
 
