@@ -1,0 +1,61 @@
+---
+layout: post
+title: Mini Batch K-means
+author: 陈小耗
+date: 2018-01-02
+img:
+tags: [sklearn]
+categories: learning
+---
+
+#Mini Batch K-means
+##原理
+
+Mini Batch 是Kmeans的一种衍生，目的是为了节省Kmeans中的计算时间。（样本距离）
+
+- 什么是Mini Batch呢？
+
+顾名思义，它是输入的数据集的一部分。在每次的训练过程中（run一次），在训练集上随机采样得到一个mini batch。
+
+> In contrast to other algorithms that reduce the convergence time of kmeans
+> Mini batch kmeans produces results that are generally only slightly worse
+> than the standard alogrithm.
+
+使用Mini batch能够极大地减小算法收敛到一个最优值的时间，同时这个最优值（最小的inertia)只比标准的算法差那么一点。
+
+##算法
+
+- step1: 随机地从数据集上采样出b个样本，构造为一个mini-batch.将每一个样本分配给其最近的质心。
+
+- step2: 更新质心。和Kmeans不一样，一旦有一个样本分配给质心后，该簇的质心就进行更新。
+而不是像Kmeans中，要等所有的样本都分配完全后，再统一为每一个簇更新质心。
+
+因此，Mini-batch Kmeans的收敛更快。
+
+##Demo - 比较Kmeans和MiniBatchKmeans两种聚类算法
+
+- 调用MiniBatchKmeans时，参数max_no_improvement是什么意思？
+
+> Control early stopping based on the consecutive number of mini batches
+> that does not yield an improvement on the smoothed inertia.
+
+如果连续max_no_improvements次的迭代，都没有获得更小的inertia。则迭代停止。
+
+设置这个参数的目的是为了防止算法出现early stopping，即过早的陷入一个最优。
+
+- 函数pairwise_distances_argmin(X,Y,axis=1,metric='euclidean',batch_size=500,
+metric_kwargs=None)是什么意思？
+
+计算一个点和其他一系列点之间的最小的距离
+
+对于X矩阵中的每一行，返回Y矩阵中和它最近的一行的index。
+
+返回的是np.ndarray.
+
+在本demo中，X是训练矩阵，一行就代表一个训练样本。Y是质心矩阵，一行代表一个簇的质心坐标。因此返回的np.ndarray标记了每一个样本和Y中哪一个质心最接近，其实就是一个label的集合。如[0,1,1,2,0,...],shape = (X.shape[0],)
+
+
+- **为什么此demo要利用这样的一种方法来得到标记？而不是predict的方式？**
+
+
+
