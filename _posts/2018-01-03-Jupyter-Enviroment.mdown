@@ -1,0 +1,125 @@
+---
+layout: post
+date: 2018-01-03
+title: Jupyter NoteBook For DataScience 初探
+author: 陈小耗
+tags: [tools]
+categories: learning
+---
+
+## 这篇博文是记录如何用Jupyter Notebook进行科学数据处理
+
+- 前言：之所以想要真正系统地学习一下Jupyter Notebook，是因为我越发感受到
+在Pycharm IDE下跑数据处理的代码的不便，当我修改了部分代码，想要尽快在图像上呈现
+效果时，无法得到及时的反馈。而Jupyter具有此功能。
+
+- 资料来源：[Jupyter Notebook for Data Science Teams](http://shop.oreilly.com/product/0636920044260.do)
+
+***
+
+### 安装Jupyter Notebook
+
+在我的电脑里，已经安装了Anaconda3.0，所以我直接在cmd中：
+
+'''
+
+conda install jupyter notebook
+
+'''
+
+安装好jupyter notebook的包，
+
+但是我却无法在cmd中键入“ipython"或者是“jupyter notebook"来启动。
+
+在开始菜单中输入“jupyter notebook"，程序帮我在 "E:/projects/Scripts/jupyter-notebook-script.py" %USERPROFILE% 中启动了jupyter notebook。
+
+在localhost:8888/tree中开启了jupyter，但此时的工作环境却是./Scripts
+路径。如何能够在浏览器中使jupyter打开自己想要的文件夹作为workstation呢？
+
+- 解决方法：
+
+在[jupyter](https://www.cnblogs.com/zlslch/p/6984403.html)这个网址中我找到了配置jupyter notebook打开的工作文件夹的方法。
+
+1. 注意每次启动jupyter仍然是在python36的scripts路径下。
+   
+   于cmd中键入： 'jupyter notebook --generate-config'
+
+   于是在C盘的Administrator/.jupyter的文件中出现一个名为：jupyter_notebok_config.py的python代码。在其中找到：the directory to use for noteboks and kernels.将其设置为想要打开的文件的路径，注意要取消掉注释.
+
+2. 于是我们每次启动jupyter时，就会打开这个默认的工作环境了。
+
+
+### 利用Docker来使用Jupyter Notebook
+
+另一方面，我想起在Udacity上的Deep-Learning课程中曾要求使用Docker中的Tensorflow镜像来学习。
+于是，我在Windows系统中搭建了一个Docker环境。（具体用另一篇博文做记录）
+
+使用步骤：
+
+1. 在Git bash中键入：'docker-machine start ron-docker'来开启一个linux系统
+
+这时我的linux系统（名字叫ron-docker)会等待一个IP，然后是一个SSH。
+此时cmd会提示我因为这个machine可能被分配了一个新的IP，所以我需要重新配置一下docker的环境。
+
+2. 键入： 'docker-machine env ron-docker'
+
+然后把返回的代码统统输入，就是在配置环境啦！
+
+3. 既然docker-machine(ron-docker)已经开启了，那么就要使用我们的镜像了。
+
+现在可以查看，ron-docker下有哪些镜像：'docker images'
+
+4. 此时要注意，虽然已经启动了ron-docker，但在Git bash中还是windows环境，我们尚未进入ron-docker这个linux系统。
+
+键入：'docker-machine ssh ron-docker'
+
+还记得在我们开启ron-docker时等待到了一个ssh吗，这里就可以直接用这个ssh进入ron-docker系统啦！
+
+5. 现在我们处于一个linux系统之下，标志是现在的cmd界面为docker@ron-docker:~$
+
+
+6. 此时要开启我们的镜像了！（可见docker image的host系统是Linux系统）
+
+'docker run -it -p 8888:8888 image_name'
+
+我在docker hub中下载了一个名为 jupyter/dactascience-notebook的镜像，满心期待地打开，结果什么都没有....
+
+
+不过，anyway,这个方法可以让我在一个linux系统下来使用jupyter。
+
+***
+
+还是不满足，于是我又查到了一篇文章：
+[Docker_DataScience](https://www.dataquest.io/blog/docker-data-science/)
+
+教我们如何在docker下配置一个用Jupyter来进行Data Science！下面是记录：
+
+- 提供的镜像（真的非常棒了！）
+
+1. dataquestio/python3-starter :这个镜像中包含了python3，jupyter notebook,
+
+numpy,pandas,scipy,sklearn,nltk！
+
+2. dataquestio/python2-starter:这个是Python2，jupyter notebook等！
+
+键入：'docker pull image-name'就可以把镜像下下来啦！！！
+
+- 设置文件夹（工作环境）
+
+值得注意的是，这个文件夹是在ron-docker这个Linux虚拟机下设置，当然，也可以在我们的本地磁盘上设置，然后再挂载到ron-docker上。
+
+- 现在就可以开始run image啦！
+
+完整的命令是：
+
+'docker run -d -p 8888:8888 -v /home/vik/notebooks:/home/ds/noteboks dataquestio/python3-starter'
+
+解释这行命令： -d代表以背景模式来运行该容器（background process, detached mode)
+
+-p代表设置ports，于是可以从我们的local machine的服务器端来使用jupyter
+
+-v代表我们可以指定打开的工作环境，这里的/home/vik/notebooks指的是虚拟机上的工作目录
+
+
+
+
