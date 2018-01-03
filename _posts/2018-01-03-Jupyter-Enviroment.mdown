@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2018-01-03
-title: Jupyter NoteBook For DataScience 初探
+title: Jupyter NoteBook For DataScience
 author: 陈小耗
 tags: [tools]
 categories: learning
@@ -56,29 +56,29 @@ conda install jupyter notebook
 
 使用步骤：
 
-1. 在Git bash中键入：'docker-machine start ron-docker'来开启一个linux系统
+1.在Git bash中键入：'docker-machine start ron-docker'来开启一个linux系统
 
 这时我的linux系统（名字叫ron-docker)会等待一个IP，然后是一个SSH。
 此时cmd会提示我因为这个machine可能被分配了一个新的IP，所以我需要重新配置一下docker的环境。
 
-2. 键入： 'docker-machine env ron-docker'
+2.键入： 'docker-machine env ron-docker'
 
 然后把返回的代码统统输入，就是在配置环境啦！
 
-3. 既然docker-machine(ron-docker)已经开启了，那么就要使用我们的镜像了。
+3.既然docker-machine(ron-docker)已经开启了，那么就要使用我们的镜像了。
 
 现在可以查看，ron-docker下有哪些镜像：'docker images'
 
-4. 此时要注意，虽然已经启动了ron-docker，但在Git bash中还是windows环境，我们尚未进入ron-docker这个linux系统。
+4.此时要注意，虽然已经启动了ron-docker，但在Git bash中还是windows环境，我们尚未进入ron-docker这个linux系统。
 
 键入：'docker-machine ssh ron-docker'
 
 还记得在我们开启ron-docker时等待到了一个ssh吗，这里就可以直接用这个ssh进入ron-docker系统啦！
 
-5. 现在我们处于一个linux系统之下，标志是现在的cmd界面为docker@ron-docker:~$
+5.现在我们处于一个linux系统之下，标志是现在的cmd界面为docker@ron-docker:~$
 
 
-6. 此时要开启我们的镜像了！（可见docker image的host系统是Linux系统）
+6.此时要开启我们的镜像了！（可见docker image的host系统是Linux系统）
 
 'docker run -it -p 8888:8888 image_name'
 
@@ -96,11 +96,11 @@ conda install jupyter notebook
 
 - 提供的镜像（真的非常棒了！）
 
-1. dataquestio/python3-starter :这个镜像中包含了python3，jupyter notebook,
+1.dataquestio/python3-starter :这个镜像中包含了python3，jupyter notebook,
 
 numpy,pandas,scipy,sklearn,nltk！
 
-2. dataquestio/python2-starter:这个是Python2，jupyter notebook等！
+2.dataquestio/python2-starter:这个是Python2，jupyter notebook等！
 
 键入：'docker pull image-name'就可以把镜像下下来啦！！！
 
