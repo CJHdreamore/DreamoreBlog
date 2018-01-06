@@ -4,8 +4,9 @@ title: 神奇的核方法
 author: 陈小耗
 date: 2018-01-06
 categories: learning
-tags: [西瓜书][sklearn]
+tags: [西瓜书,sklearn]
 ---
+
 
 - **这篇博文是“核方法”的笔记、sklearn中运用kernel的一些算法，以及我对此的感悟。**
 
@@ -192,7 +193,7 @@ tags: [西瓜书][sklearn]
   4.SVM和PCA在转化为优化问题时，通过**目标函数**和**约束**表现出了各自作为监督学习分类器和将为算法的特点。
 
 
-  
+
 
 
 
