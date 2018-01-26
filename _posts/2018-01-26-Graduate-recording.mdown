@@ -5,6 +5,7 @@ author: 陈小耗
 date: 2018-01-26
 tags: [Graduate]
 categories: work
+img: snow.jpg
 ---
 
 # 研究生二年级（上）工作总结
@@ -53,8 +54,6 @@ categories: work
  
  
  
-
----
 
 
 ## 二. 重点文献阅读札记
@@ -293,6 +292,9 @@ categories: work
 
 
 以上就是我本学期的阶段性总结。
+
+
+
 
                                                                                        学生：陈洁好
 
