@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 你在终点等我——写给丽姐姐
-img: to_brithday.jpg
+img: chongqing.jpg
 date: 2018-3-10
 categories: life
 music-id: 447279735
@@ -9,3 +9,4 @@ tags: [Forever]
 author: 陈小耗
 ---
 
+test music
