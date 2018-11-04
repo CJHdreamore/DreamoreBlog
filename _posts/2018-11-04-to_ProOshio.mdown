@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 致肖老师的一封信
-img: star_of_sky.jpg
-date: 2018-11-4
+date: 2018-11-04
+img: cat_eye.jpg
 categories: life
 music-id: 438462713
 tags: [Forever]
