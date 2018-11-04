@@ -4,7 +4,7 @@ title: 致肖老师的一封信
 img: star_of_sky.jpg
 date: 2018-11-4
 categories: life
-music-id:438462713
+music-id: 438462713
 tags: [Forever]
 author: 陈小耗
 ---
@@ -86,4 +86,5 @@ author: 陈小耗
 
 
 洁好
+
 2018.11.4
